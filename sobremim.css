@@ -1,0 +1,558 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+	--main-color:red ;
+	--black:#13131a;
+	--bg: #010103;
+	--border:.1rem solid rgba(255,255,255,.3);
+}
+
+body{
+
+	font-family: roboto, goergia, sans-serif, verdana;
+	margin: 0;
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+	
+}
+
+main{
+	margin: 0 auto;
+}
+
+
+
+#banner{
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0.2) url(img/sobre.png);
+	background-size: cover;
+	background-position:center;
+	background-blend-mode: overlay;
+	color: white;
+	--border:.1rem solid rgba(255,255,255,.3);
+
+
+}
+
+#searchbox{
+	position: fixed;
+	right: 0;
+	top: 24px;
+	widows: 500px;
+	pointer-events: none;
+	z-index: 50;
+	transition: 0.4s;
+}
+
+#search input{
+	height: 48px;
+	width: 100%;
+}
+
+input, textarea{
+height: 32px;
+padding: 0 16px;
+font-family: roboto, condensend,Georgia, sans-serif, verdana;
+font-size: 20px;
+border: none;
+box-shadow: inset 8px 3px 18px -4px rgba(0, 0, 0, 0.4);
+}
+
+input:focus, textarea: focus{
+outline: none;
+}
+
+nav{
+	height: 72px;
+	background-color: black;
+	width: 100%;
+	margin: 0;
+	position: fixed;
+	font-family: roboto, condensed , sans-serif,Georgia;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 16px 0 0;
+	box-sizing: border-box;
+	z-index: 100;
+	border-bottom: var(--border);
+	
+}
+
+nav a{
+	padding: 0 32px;
+	color: white;
+	transition: 0.4s;
+}
+
+nav a:hover{
+	text-decoration: none;
+	color: red;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+#logo-img{
+	display: flex;
+	height: 100%;
+	background: black;
+	padding: 0 32px;
+	align-items: center;
+	color: black;
+	transition: .4s;
+}
+
+#logo-img img{
+	height: 100px;
+
+}
+
+#menu-icon{
+	height: 100%;
+	font-size: 28px;
+	padding: 0 4px;
+	color: white;
+	display: none;
+	align-items: center;
+}
+
+#search-icon{
+	color: white;
+	padding: 0 32px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#search-icon:hover{
+	color: red;
+}
+
+
+/*Slide*/
+#slideout-menu {
+
+	display: none;
+	background: #2d3436;
+	z-index: 100;
+	position: fixed;
+	transition: 0.4s;
+	margin-top: 72px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#slideout-menu ul{
+	list-style: none;
+	padding: 0 32px;
+}
+
+#slideout-menu ul li{
+padding: 8px;
+}
+
+
+
+#slideout-menu a{
+	font-family: roboto, condensed;
+	font-size: 20px;
+	color: white;
+}
+
+#slideout-menu input{
+	width: 85%;
+	padding: 8px;
+	font-family: roboto,condensed,sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+/*Slide*/
+
+
+
+
+
+
+#banner h1{
+	font-family:  Georgia,Arial,roboto, verdana, sans-serif, helvetica;
+	font-size: 46px;
+	display: flex;
+	font-weight: bold;
+	margin-right: 180px;
+	margin-top:  70px;
+	text-transform: uppercase;
+	color: orangered;
+}
+
+#banner p{
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+}
+
+
+
+
+
+
+/*Novo*/
+::root{
+	--main-color:red ;
+	--black:#13131a;
+	--bg: #010103;
+	--border:.1rem solid rgba(255,255,255,.3);
+}
+
+
+/*Novo*/
+
+/* Para Contacto*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+
+
+
+
+
+
+
+/* Para contacto*/
+
+
+/*Social media footrt*/
+.profile-area{
+	padding: 80px 0;
+
+}
+
+.card{
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	border-radius: 15px;
+	background-color: whitesmoke;
+}
+
+
+
+.imgl{
+	text-align: center;
+
+
+}
+.imgl img{
+	height: 200px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	width: 100%;
+
+
+}
+
+.main-text{
+	padding: 30px 0;
+	text-align: center;
+}
+
+.main-text h2{
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 20px;
+	margin: 0 0 20px;
+	color: orangered;
+}
+.main-text p{
+	font-size: 16px;
+	padding: 0 35px;
+	margin: 0 100px;
+	color: gray;
+	font-weight: bolder;
+	font-family:helvetica,roboto,condensend, sans-serif,arial. ;
+
+
+
+}
+
+.cor{
+	color: green;
+}
+
+.social{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.social i{
+	font-size: 20px;
+	color: darkcyan;
+	
+}
+
+.social  .fa-facebook{
+	color: #3b5998;;
+}
+
+.social .fa-instagram{
+	color:#ff0000;
+
+}
+.social .fa-twitter{
+	color:blue;
+
+}
+
+.ilha{
+	font-size: 14px;
+}
+
+
+
+
+/*Botão*/
+
+
+
+/*Novo*/
+
+/*Zoom*/
+
+
+/*Zoom*/
+
+
+
+
+
+
+
+
+
+
+footer{
+
+	border: 1px solid white;
+	height: 50px;
+	color: white;
+	background-color: black;
+	align-items: center;
+     display: flex;
+	justify-content: center;
+	font-style: italic;
+	margin-top: 18px;
+	font-size: 14px;
+
+}
+
+
+
+/*Media queries*/
+@media(min-width: 720px){
+	main{	width: 95%;
+	}
+
+	.imgl img{
+	height: 200px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	width: 12%;
+
+}
+}
+
+@media(min-width: 1200px){
+
+
+	main{	width: 85%;
+	}
+}
+
+
+@media(max-width: 900px){
+
+	.imgl img{
+	height: 200px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	width: 20%;
+
+}
+
+	#banner h1{
+	font-family:  Georgia,Arial,roboto, verdana, sans-serif, helvetica;
+	font-size: 27px;
+	display: flex;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-right: 80px;
+	margin-left: 7px;
+	margin-top: -190px;
+}
+
+.responsavel2{
+
+	width: 38px;
+	
+	font-family: Helwetica, sans-serif, arial,serif,roboto;
+	color:white;
+	padding: 0 60px;
+	font-size: 15px;
+	margin-left: -40px;
+	
+
+
+}
+.estru{
+	margin: 0;
+	width:auto;
+	margin-right: -90px;
+}
+
+.espaca20 img{
+
+
+	height: 190px;
+	padding: 0 14px;
+	width: 250px;
+	
+}
+
+.espaca20 img:hover{
+
+	box-shadow: 0 8px 6px -6px #696969
+
+}
+
+.contata1 h3{
+	
+	padding: 0 100px;
+	font-size: 14px;
+	border-bottom: var(--border);
+	text-transform: uppercase;
+	color:white;
+	font-family: Helwetica, sans-serif, arial,serif,roboto;
+}
+
+
+#banner p{
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	margin-right: 70px;
+	color: red;
+}
+.forma h3{
+	padding: 0 80px;
+	font-family: Georgia,Arial,roboto, verdana, sans-serif, helvetica;
+	width: -60px;
+	text-align: justify;
+
+}
+
+.forma p{
+	padding: 0 78px;
+	font-size: 14px;
+	width: -60px;
+	font-family:roboto, verdana, sans-serif, helvetica ;
+}
+
+
+nav ul{
+	display: none;
+}
+	
+
+	#menu-icon{
+		display: flex;
+	}
+
+	#slideout-menu{
+		display: block;
+
+	}
+
+	#searchbox{
+		display: none;
+	}
+
+
+	.espB {
+
+	width: 380px;
+	text-align: justify;
+	color:white;
+	margin-top: -10px;
+	font-size: 11px;
+	font-family: Helwetica, sans-serif, arial,serif,roboto;
+	
+
+}
+
+.responsavel2{
+
+	width: 400px;
+	text-align: justify;
+	font-family: Helwetica, sans-serif, arial,serif,roboto;
+	color:white;
+	padding: 0 50px;
+	font-size: 9px;
+}
+
+
+.espaca20 img{
+
+
+	height: 200px;
+	padding: 0 14px;
+	width: 328px;
+	
+}
+
+.espaca20 img:hover{
+
+	box-shadow: 0 8px 6px -6px #696969
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -351,17 +351,18 @@ footer{
 }
 
 .cor{
-	color: darkred;
+	color: green;
 }
 
 .fig{
 	font-family:roboto, condensed, sans-serif, arial,verdana;
 	color: black;
 	font-size: 13px;
+	margin: 0 8px;
 }
 
 .para{
-	font-family: arial,roboto, condensed, sans-serif,arial,helvetica;
+	font-family: georgia,poppins,roboto,condensed, sans-serif,arial;
 	color: black;
 	font-weight: 200;
 }
@@ -492,7 +493,7 @@ section{
 
 
 	.para2{
-		padding: 0 100px;
+		padding: 0 160px;
 		width: 500px;
 		font-family: georgia,poppins,roboto,condensed, sans-serif,arial;
 

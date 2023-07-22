@@ -25,43 +25,310 @@ body{
 /*Novo*/
 
 
-
-/*Novo*/
-
-.section-heading{
-
-
-
-	   font-size: 24px;
-	  font-family:Georgia, roboto, condensed, sans-serif; 
-     border-left: 3px solid red;
-     border-right: 3px solid red;
-     transition: all .4s;
-     display: inline-block;
-     padding: 4px 32px;
-     color: white;
-     background-color: black;
-
-
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centralizar verticalmente */
+  color: #000; /* Cor preta para as setas */
+  font-size: 24px; /* Tamanho das setas */
 }
 
+/* Estilizar setas ao passar o mouse */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo com transparência */
+}ilizar botões ao passar o mouse */
+ /* Outros estilos */
 
-.section-heading:hover{
-	padding: 4px 48px;
-	background-color: black;
+
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Estilos do título e parágrafos sobre arquitetura */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px; /* Espaçamento para todos os lados */
+    }
+
+   
+    h1 {
+      font-size: 32px;
+      margin: 0 20px 20px; /* Margens superior e inferior de 20px, margens laterais de 20px */
+      text-align: center;
+      color: #333; /* Cor do texto */
+    }
+
+    .architecture-paragraphs {
+
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .architecture-paragraph {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin: 0 20px 20px; 
+      
+    }
+
+    .architecture-paragraph h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333; /* Cor do título */
+
+    }
+
+    .architecture-paragraph p {
+      line-height: 1.6;
+      color: #555; /* Cor do texto */
+    }
+
+
+
+/* Estilos para os botões de navegação */
+
+
+/* Reset de estilos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  max-height: 400px; /* Defina a altura máxima do slide */
+  overflow: hidden; /* Para esconder partes da imagem que excedam o limite de altura */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ... Outros estilos ... */
+No código acima, definimos uma altura máxima de 400 pixels para o slide automático, ajustando o valor conforme necessário para atender ao layout desejado. Além disso, usamos overflow: hidden no container do slide para esconder qualquer parte da imagem que exceda o limite de altura.
+
+Dessa forma, as imagens do slide automático não invadirão outras imagens ou elementos na página. Elas serão restritas ao espaço definido pela altura máxima especificada, e o restante da imagem ficará oculto dentro do container. O efeito "object-fit: cover" mantém o aspecto da imagem e garante que ela preencha todo o espaço disponível no slide.
+
+Agora, o slide automático não interferirá em outros elementos da página, mantendo um layout mais organizado e profissional.
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+   
+    /* Estilos para os botões de navegação */
+
+    #slideout-menu {
+
+	display: none;
+	background: #2d3436;
+	z-index: 100;
+	position: fixed;
+	transition: 0.4s;
+	margin-top: 72px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
 	
 }
 
-
-
-
-
-
-
-
-main{
-	margin: 0 auto;
+#slideout-menu ul{
+	list-style: none;
+	padding: 0 32px;
 }
+
+#slideout-menu ul li{
+padding: 8px;
+
+}
+
+
+
+#slideout-menu a{
+	font-family: Georgia, roboto, condensed, sans-serif;
+	font-size: 20px;
+	color: white;
+	
+}
+
+#slideout-menu input{
+	width: 85%;
+	padding: 8px;
+	font-family: Georgia, roboto, condensed, sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+   /* Estilos para os botões de navegação */
+   
+
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.paragraphs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.box {
+  flex-basis: calc(50% - 20px);
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+ .gallery-box {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .gallery-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .gallery-box h2 {
+      font-size: 24px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .gallery-box p {
+      line-height: 1.6;
+    }
+
+
+
+
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+  .box {
+    flex-basis: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .swiper-container {
+    height: 300px;
+  }
+}
+
+
+/*Novo*/
+
+
+
+/*Slide*/
+
+
+
+
+
+
+
+
 
 #banner{
 	height: 90vh;
@@ -143,6 +410,7 @@ nav ul{
 	align-items: center;
 	height: 100%;
 	margin: 0;
+
 }
 
 a{
@@ -191,48 +459,40 @@ a:hover{
 
 
 /*Slide*/
-
-#slideout-menu {
-
-	display: none;
-	background: #2d3436;
-	z-index: 100;
-	position: fixed;
-	transition: 0.4s;
-	margin-top: 72px;
-	width: 100%;
-	text-align: center;
-	opacity: 0;
-	pointer-events: none;
-	
+/* Estilos para a section e a box branca */
+.section-box {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-#slideout-menu ul{
-	list-style: none;
-	padding: 0 32px;
+/* Estilos para o carousel (mantenha o que você já tem) */
+.carousel {
+  /* Estilos do carousel aqui */
 }
 
-#slideout-menu ul li{
-padding: 8px;
-
+.carousel-indicators {
+  /* Estilos dos indicadores do carousel aqui */
 }
 
-
-
-#slideout-menu a{
-	font-family: Georgia, roboto, condensed, sans-serif;
-	font-size: 20px;
-	color: white;
-	
+.carousel-inner {
+  /* Estilos do conteúdo do carousel aqui */
 }
 
-#slideout-menu input{
-	width: 85%;
-	padding: 8px;
-	font-family: Georgia, roboto, condensed, sans-serif;
-	font-size: 20px;
-	text-align: center;
+.carousel-item {
+  /* Estilos dos itens do carousel aqui */
 }
+
+.carousel-control-prev, .carousel-control-next {
+  /* Estilos dos botões de navegação do carousel aqui */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  /* Estilos dos ícones de navegação do carousel aqui */
+}
+
 
 /*Slide*/
 
@@ -281,27 +541,8 @@ header h1{
 	font-size: ;
 }
 
-.gallery-container{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	gap: 2vw;
-	padding: 0 3vw;
 
 
-}
-
-.gallery-items{
-   width: 240px;
-   height: 200px;
-   border: 1px solid black;
-}
-
-.gallery-items img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 
 
@@ -313,16 +554,97 @@ header h1{
 	--border:.1rem solid rgba(255,255,255,.3);
 }
 
+/*Video*/
+
+/*Video*/
+/*Galeria de imagens*/
+
+.building-gallery-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.building-gallery-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color:#333;
+}
+
+.building-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.building-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.building-item img:hover {
+  transform: scale(1.05);
+}
+
+
+.white-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/*Galeria de imagens*/
+
+
+
+/*Novo1*/
 
 
 
 
 
+/*Novo123*/
+.gallery {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
 
+/* Estilos para o box da galeria */
+.gallery-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.gallery-box img {
+  width: 100%; /* Ocupar toda a largura do box */
+  height: auto; /* A altura será ajustada automaticamente para manter a proporção da imagem */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
 
+.gallery-info {
+  text-align: center;
+  color: #333;
+}
 
+.gallery-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
+.gallery-info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+/*Novo123*/
 
 
 footer{
@@ -340,83 +662,92 @@ footer{
 
 }
 
-.card .card-description{
-	padding: 0 8px;
-
-}
-
-.titu{
-	text-transform: capitalize;
-	letter-spacing: 1px;
-	text-shadow: 1px black;
-	font-size: 32px;
-	font-family:Georgia, roboto, condensed, sans-serif;
-	padding: 0 8px;
-	color: black;
-	font-weight: bolder;
-}
-
-.cor{
-	color:black;
-}
-
-.fig{
-	font-family:Georgia, roboto, condensed, sans-serif;
-	color: black;
-	font-size: 13px;
-	margin: 0 8px;
-}
-
-.para{
-	font-family: Georgia, roboto, condensed, sans-serif;
-	color: black;
-	font-weight: 200;
-}
-
-.novo23{
-
-	font-family:Georgia, roboto, condensed, sans-serif;
-	padding: 0 22px;
-	text-indent: 22px;
-	text-align: justify;
-	color: gray;
-	font-weight: bolder;
 
 
-}
-
-.lua4{
-	color: gray;
-	font-weight: bolder;
-}
 
 
-section{
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.futer{
-	font-family: Georgia, roboto, condensed, sans-serif;
-}
-
-.predio img{
-	border-radius: 4px;
-	box-shadow: 0px 1px 10px rgba(0, 0, 0, 2.0);
-	cursor: default;
-	transition: all 40ms ease;
-}
-
-.predio img:hover{
-		box-shadow: 5px 5px 20px rgba(0, 0, 0, 4.0);
 
 
-}
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
 
-.card-image img{
-	border-radius: 4px;
-	
+  main {
+    padding: 20px;
+  }
+
+  .swiper-container {
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .paragraphs {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .box {
+    flex-basis: 100%;
+  }
+
+  #banner h1 {
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+  }
+
+  #logo-img {
+    padding: 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #menu-icon {
+    display: flex;
+  }
+
+  #searchbox {
+    display: none;
+  }
+
+  #search-icon {
+    display: flex;
+  }
+
+  #slideout-menu {
+    display: none;
+  }
+
+  #slideout-menu ul li {
+    padding: 8px;
+  }
+
+  #slideout-menu a {
+    font-family: Georgia, roboto, condensed, sans-serif;
+    font-size: 20px;
+    color: white;
+  }
+
+  #slideout-menu input {
+    width: 85%;
+    padding: 8px;
+    font-family: Georgia, roboto, condensed, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 

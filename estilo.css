@@ -393,6 +393,7 @@ nav{
 }
 
 nav a{
+	text-decoration: none;
 	padding: 0 32px;
 	color: white;
 	transition: 0.4s;
@@ -417,9 +418,8 @@ a{
 	text-decoration: none;
 	color: black;
 }
-
 a:hover{
-	text-decoration: underline;
+	text-decoration:underline;
 }
 
 #logo-img{
